@@ -1,0 +1,210 @@
+{
+	"OperationalDate": "2016-09-09T00:00:00",
+	"Status": 0,
+	"Items": [{
+		"RequestType": 0,
+		"StockInfo": {
+			"StockInfoConfig": {
+				"Status": 0,
+				"InternalCompanyId": 1,
+				"OwnerId": 2,
+				"ProductId": 2,
+				"LocationId": 22,
+				"BaseUnitId": 4,
+				"StorageUnitId": 31,
+				"TrackingNumber": null,
+				"InventoryNumber": null,
+				"Lot": "PUR16-05469-1",
+				"ProductionDate": null,
+				"ExpiryDate": null,
+				"DateIn": null,
+				"Sids": [{
+					"SidId": 5,
+					"Value": "B962 - KRISTA K PLUS EE"
+				},
+				{
+					"SidId": 6,
+					"Value": "PE"
+				},
+				{
+					"SidId": 34,
+					"Value": "Foil"
+				},
+				{
+					"SidId": 12,
+					"Value": "B25"
+				}]
+			},
+			"BaseQuantity": {
+				"UnitId": 4,
+				"MeasurementUnitId": null,
+				"Quantity": 5875.00000000
+			},
+			"StorageQuantity": {
+				"UnitId": 31,
+				"MeasurementUnitId": null,
+				"Quantity": 0.00000000
+			}
+		},
+		"CustomsStatus": 0,
+		"DocumentDate": null,
+		"DocumentCodeId": 0,
+		"DocumentNumber": null
+	},
+	{
+		"RequestType": 0,
+		"StockInfo": {
+			"StockInfoConfig": {
+				"Status": 0,
+				"InternalCompanyId": 1,
+				"OwnerId": 2,
+				"ProductId": 13,
+				"LocationId": 14,
+				"BaseUnitId": 2,
+				"StorageUnitId": null,
+				"TrackingNumber": "20160630_ATLANTICBULKER",
+				"InventoryNumber": "20160630_ATLANTICBULKER",
+				"Lot": "ATLANTIC BULKER ",
+				"ProductionDate": null,
+				"ExpiryDate": null,
+				"DateIn": null,
+				"Sids": [{
+					"SidId": 3,
+					"Value": null
+				},
+				{
+					"SidId": 5,
+					"Value": null
+				},
+				{
+					"SidId": 6,
+					"Value": null
+				},
+				{
+					"SidId": 12,
+					"Value": null
+				},
+				{
+					"SidId": 7,
+					"Value": null
+				},
+				{
+					"SidId": 8,
+					"Value": null
+				},
+				{
+					"SidId": 10,
+					"Value": null
+				}]
+			},
+			"BaseQuantity": {
+				"UnitId": 2,
+				"MeasurementUnitId": 1,
+				"Quantity": 144000.00000000
+			}
+		},
+		"CustomsStatus": 0,
+		"DocumentDate": null,
+		"DocumentCodeId": 0,
+		"DocumentNumber": null
+	},
+	{
+		"RequestType": 0,
+		"StockInfo": {
+			"StockInfoConfig": {
+				"Status": 0,
+				"InternalCompanyId": 1,
+				"OwnerId": 2,
+				"ProductId": 19,
+				"LocationId": 1936,
+				"BaseUnitId": 4,
+				"StorageUnitId": null,
+				"TrackingNumber": null,
+				"InventoryNumber": null,
+				"Lot": null,
+				"ProductionDate": null,
+				"ExpiryDate": null,
+				"DateIn": null,
+				"Sids": [{
+					"SidId": 7,
+					"Value": "BL (1,1x1,1) 4W TR"
+				},
+				{
+					"SidId": 8,
+					"Value": "New"
+				}]
+			},
+			"BaseQuantity": {
+				"UnitId": 4,
+				"MeasurementUnitId": null,
+				"Quantity": 122.00000000
+			}
+		},
+		"CustomsStatus": 0,
+		"DocumentDate": null,
+		"DocumentCodeId": 0,
+		"DocumentNumber": null
+	},
+	{
+		"RequestType": 1,
+		"StockInfo": {
+			"StockInfoConfig": {
+				"Status": 0,
+				"InternalCompanyId": 1,
+				"OwnerId": 2,
+				"ProductId": 13,
+				"LocationId": 27,
+				"BaseUnitId": 2,
+				"StorageUnitId": 24,
+				"TrackingNumber": "20160630_ATLANTICBULKER",
+				"InventoryNumber": "20160630_ATLANTICBULKER",
+				"Lot": "044929-1851/10 - NPCTA 50 H - B962",
+				"ProductionDate": null,
+				"ExpiryDate": null,
+				"DateIn": null,
+				"Sids": [{
+					"SidId": 3,
+					"Value": "White"
+				},
+				{
+					"SidId": 5,
+					"Value": "B962 - KRISTA K PLUS EE"
+				},
+				{
+					"SidId": 6,
+					"Value": "PE"
+				},
+				{
+					"SidId": 12,
+					"Value": "B25"
+				},
+				{
+					"SidId": 7,
+					"Value": "BL (1,1x1,1) 4W TR"
+				},
+				{
+					"SidId": 8,
+					"Value": "New"
+				},
+				{
+					"SidId": 10,
+					"Value": null
+				}]
+			},
+			"BaseQuantity": {
+				"UnitId": 2,
+				"MeasurementUnitId": 1,
+				"Quantity": 144000.00000000
+			},
+			"StorageQuantity": {
+				"UnitId": 24,
+				"MeasurementUnitId": null,
+				"Quantity": 120.00000000
+			}
+		},
+		"CustomsStatus": 0,
+		"DocumentDate": null,
+		"DocumentCodeId": 0,
+		"DocumentNumber": null
+	}]
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.1.112/styles/kendo.common.min.css">
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.1.112/styles/kendo.rtl.min.css">
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.1.112/styles/kendo.default.min.css">
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.1.112/styles/kendo.mobile.all.min.css">
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2016.1.112/js/angular.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2016.1.112/js/jszip.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2016.1.112/js/kendo.all.min.js"></script>
+  </head>
+  <body>
+    <p>Src: http://dojo.telerik.com/EfAjA/10</p>
+    <div id="kGrid"></div>
+    <button onclick="clicked()">Show the id of selected row</button>
+    <button onclick="clicked2()">Select a row with Name Michael</button>
+    <button onclick="clicked3()">Json stringfy row with name Rachel</button>
+	<hr />
+	<div id="log"></div>
+
+    <script>
+      $(document).ready(function () {
+
+        //Perhaps sample in the zip file is not a convenient way to present a problem. Sorry. Here is the code
+        var data = [
+
+          { Item1: 'Michael', Item2: 'Chicago', Item3: 'IL' },
+          { Item1: 'Rachel', Item2: 'New York', Item3: 'NY' },
+          { Item1: 'Daniel', Item2: 'Atlanta', Item3: 'GE' }
+        ];
+
+        $('#kGrid').kendoGrid({
+          dataSource: {
+            data: data,
+            pageSize: 10,
+            schema: {
+              model: {
+                id: 'Item1'
+              }
+            }
+          },
+          selectable: 'row',
+          scrollable: true,
+          sortable: true,
+          pageable: true,
+          resizable: true,
+          columns: [
+            { field: "Item1", title: "Name", width: "50px", attributes: { style: "font-size:10px" } },
+            { field: "Item2", title: "City", width: "50px", attributes: { style: "font-size:10px" } },
+            { field: "Item3", title: "State", width: "50px", attributes: { style: "font-size:10px" } }
+          ]
+
+        });
+      });
+      function clicked(){
+       var grid = $("#kGrid").data().kendoGrid;
+       var selectedRow = grid.select();
+       var selectedDataItem = grid.dataItem(selectedRow);
+       // console.log(selectedDataItem.Item1);
+	   log.innerHTML = selectedDataItem.Item1;
+      }
+      function clicked2(){
+        var searchedName = "Michael"
+       var grid = $("#kGrid").data().kendoGrid;
+       var data = grid.dataSource.data();
+        for(var i = 0; i < data.length; i++){
+          if(data[i].Item1 == searchedName){
+            var select = grid.tbody.find('tr[data-uid="' +  data[i].uid + '"]');
+            grid.select(select);
+          }
+        }
+       var selectedRow = grid.select();
+       var selectedDataItem = grid.dataItem(selectedRow);
+       console.log(selectedDataItem.Item1);
+      }
+	  function clicked3(){
+        var searchedName = "Rachel";
+		var gr1 = $( "#kGrid" ).data('kendoGrid');
+        var data = gr1.dataSource.data();
+        for(var i = 0; i < data.length; i++){
+          if(data[i].Item1 == searchedName){
+		    var kgUid = log.innerHTML = data[i].uid;
+			gr1 =  $( "#kGrid" ).data('kendoGrid');
+			var mm = gr1.dataSource.getByUid(kgUid);
+			$( '#log' ).append ( '<hr \>' + JSON.stringify (mm));
+			break;
+          }
+        }	
+	  }
+    </script>
+  </body>
+</html>

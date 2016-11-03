@@ -1,0 +1,378 @@
+{
+	"OperationalDate": "2016-09-28T00:00:00+02:00",
+	"Status": 1,
+	"RequestItems": [{
+		"RequestType": 1,
+		"StockInfo": {
+			"StorageUnitId": null,
+			"StorageUnitQuantity": 0.0,
+			"BaseUnitId": 12,
+			"BaseUnitQuantity": 1.00000000,
+			"BaseMeasurementUnitDesc": null,
+			"TrackingNumber": null,
+			"InventoryNumber": null,
+			"StockStatus": 0,
+			"Lot": null,
+			"ProductionDate": null,
+			"ExpiryDate": null,
+			"DateIn": null,
+			"ExtraQuantities": [{
+				"UnitId": 3,
+				"MeasurementUnitId": 1,
+				"Quantity": 1.00000000,
+				"MeasurementUnits": [{
+					"Description": "kg",
+					"Coef": null,
+					"ParentId": null,
+					"Id": 1
+				},
+				{
+					"Description": "t",
+					"Coef": 1000.000000,
+					"ParentId": 1,
+					"Id": 2
+				},
+				{
+					"Description": "g",
+					"Coef": 0.001000,
+					"ParentId": 1,
+					"Id": 4
+				}],
+				"StorageUnits": null,
+				"UnitType": 3
+			},
+			{
+				"UnitId": 34,
+				"MeasurementUnitId": 1,
+				"Quantity": 1.00000000,
+				"MeasurementUnits": [{
+					"Description": "kg",
+					"Coef": null,
+					"ParentId": null,
+					"Id": 1
+				},
+				{
+					"Description": "t",
+					"Coef": 1000.000000,
+					"ParentId": 1,
+					"Id": 2
+				},
+				{
+					"Description": "g",
+					"Coef": 0.001000,
+					"ParentId": 1,
+					"Id": 4
+				}],
+				"StorageUnits": null,
+				"CalculateBtnVisible": "none",
+				"IsStorage": false,
+				"UnitType": 3
+			}],
+			"Sids": [{
+				"SidId": 27,
+				"Value": "MEDU",
+				"SidCode": "CNT_PREFIX",
+				"SidDescription": "Prefix",
+				"Required": "",
+				"RequiredMessage": "",
+				"Sequence": 1
+			},
+			{
+				"SidId": 28,
+				"Value": "3654728",
+				"SidCode": "CNT_NR",
+				"SidDescription": "Number",
+				"Required": "",
+				"RequiredMessage": "",
+				"Sequence": 2
+			},
+			{
+				"SidId": 29,
+				"Value": "1",
+				"SidCode": "CNT_ISO",
+				"SidDescription": "ISO",
+				"Required": "",
+				"RequiredMessage": "",
+				"Sequence": 3
+			},
+			{
+				"SidId": 31,
+				"Value": null,
+				"SidCode": "CNT_SEALNR",
+				"SidDescription": "Seal number",
+				"Required": "",
+				"RequiredMessage": "",
+				"Sequence": 5
+			},
+			{
+				"SidId": 32,
+				"Value": null,
+				"SidCode": "CNT_SEALNR2",
+				"SidDescription": "Seal number 2",
+				"Required": "",
+				"RequiredMessage": "",
+				"Sequence": 6
+			},
+			{
+				"SidId": 39,
+				"Value": null,
+				"SidCode": "CNT_BL_RES",
+				"SidDescription": "Blocked Reason",
+				"Required": "",
+				"RequiredMessage": "",
+				"Sequence": 14
+			},
+			{
+				"SidId": 40,
+				"Value": null,
+				"SidCode": "CNT_DEP_ST",
+				"SidDescription": "Depot Status",
+				"Required": "",
+				"RequiredMessage": "",
+				"Sequence": 15
+			},
+			{
+				"SidId": 41,
+				"Value": null,
+				"SidCode": "CNT_COND",
+				"SidDescription": "Condition",
+				"Required": "",
+				"RequiredMessage": "",
+				"Sequence": 16
+			},
+			{
+				"SidId": 42,
+				"Value": null,
+				"SidCode": "CNT_CONTENT",
+				"SidDescription": "Content",
+				"Required": "",
+				"RequiredMessage": "",
+				"Sequence": 17
+			}],
+			"StockInfoConfig": {
+				"InternalCompanyId": 1,
+				"OwnerId": 13,
+				"ProductId": 10,
+				"LocationId": 31,
+				"BaseUnitId": 12,
+				"StorageUnitId": null,
+				"TrackingNumber": null,
+				"InventoryNumber": null,
+				"Status": 0,
+				"StatusText": "Available",
+				"Lot": null,
+				"ProductionDate": null,
+				"ExpiryDate": null,
+				"DateIn": null,
+				"ExtraUnitsIds": [3, 34],
+				"Sids": [{
+					"SidId": 27,
+					"StockInfoConfigId": 110356,
+					"Value": "MEDU",
+					"SidCode": "CNT_PREFIX",
+					"SidDescription": "Prefix",
+					"Required": "",
+					"RequiredMessage": "",
+					"Sequence": 1
+				},
+				{
+					"SidId": 28,
+					"StockInfoConfigId": 110356,
+					"Value": "3654728",
+					"SidCode": "CNT_NR",
+					"SidDescription": "Number",
+					"Required": "",
+					"RequiredMessage": "",
+					"Sequence": 2
+				},
+				{
+					"SidId": 29,
+					"StockInfoConfigId": 110356,
+					"Value": "1",
+					"SidCode": "CNT_ISO",
+					"SidDescription": "ISO",
+					"Required": "",
+					"RequiredMessage": "",
+					"Sequence": 3
+				},
+				{
+					"SidId": 31,
+					"StockInfoConfigId": 110356,
+					"Value": null,
+					"SidCode": "CNT_SEALNR",
+					"SidDescription": "Seal number",
+					"Required": "",
+					"RequiredMessage": "",
+					"Sequence": 5
+				},
+				{
+					"SidId": 32,
+					"StockInfoConfigId": 110356,
+					"Value": null,
+					"SidCode": "CNT_SEALNR2",
+					"SidDescription": "Seal number 2",
+					"Required": "",
+					"RequiredMessage": "",
+					"Sequence": 6
+				},
+				{
+					"SidId": 39,
+					"StockInfoConfigId": 110356,
+					"Value": null,
+					"SidCode": "CNT_BL_RES",
+					"SidDescription": "Blocked Reason",
+					"Required": "",
+					"RequiredMessage": "",
+					"Sequence": 14
+				},
+				{
+					"SidId": 40,
+					"StockInfoConfigId": 110356,
+					"Value": null,
+					"SidCode": "CNT_DEP_ST",
+					"SidDescription": "Depot Status",
+					"Required": "",
+					"RequiredMessage": "",
+					"Sequence": 15
+				},
+				{
+					"SidId": 41,
+					"StockInfoConfigId": 110356,
+					"Value": null,
+					"SidCode": "CNT_COND",
+					"SidDescription": "Condition",
+					"Required": "",
+					"RequiredMessage": "",
+					"Sequence": 16
+				},
+				{
+					"SidId": 42,
+					"StockInfoConfigId": 110356,
+					"Value": null,
+					"SidCode": "CNT_CONTENT",
+					"SidDescription": "Content",
+					"Required": "",
+					"RequiredMessage": "",
+					"Sequence": 17
+				}]
+			},
+			"BaseQuantity": {
+				"UnitId": 12,
+				"UnitDescription": "CONTAINER",
+				"MeasurementUnitId": null,
+				"MeasurementUnitDescription": null,
+				"Quantity": 1.00000000,
+				"MeasurementUnits": [],
+				"ActionList": [{
+					"UnitId": 3,
+					"UnitDescription": null,
+					"DefaultMeasurementUnitId": null,
+					"DefaultMeasurementUnitDesc": null,
+					"Coef": null,
+					"Id": 0
+				},
+				{
+					"UnitId": 34,
+					"UnitDescription": null,
+					"DefaultMeasurementUnitId": null,
+					"DefaultMeasurementUnitDesc": null,
+					"Coef": null,
+					"Id": 0
+				}],
+				"StorageUnits": null,
+				"IsStorage": false,
+				"UnitType": 1
+			},
+			"Quantities": [{
+				"UnitId": 12,
+				"UnitDescription": "CONTAINER",
+				"MeasurementUnitId": null,
+				"MeasurementUnitDescription": null,
+				"Quantity": 1.00000000,
+				"MeasurementUnits": [],
+				"ActionList": [{
+					"UnitId": 3,
+					"UnitDescription": null,
+					"DefaultMeasurementUnitId": null,
+					"DefaultMeasurementUnitDesc": null,
+					"Coef": null,
+					"Id": 0
+				},
+				{
+					"UnitId": 34,
+					"UnitDescription": null,
+					"DefaultMeasurementUnitId": null,
+					"DefaultMeasurementUnitDesc": null,
+					"Coef": null,
+					"Id": 0
+				}],
+				"StorageUnits": null,
+				"IsStorage": false,
+				"UnitType": 1
+			},
+			{
+				"UnitId": 3,
+				"UnitDescription": "Gross",
+				"MeasurementUnitId": 1,
+				"MeasurementUnitDescription": "kg",
+				"Quantity": 1.00000000,
+				"MeasurementUnits": [{
+					"Description": "kg",
+					"Coef": null,
+					"ParentId": null,
+					"Id": 1
+				},
+				{
+					"Description": "t",
+					"Coef": 1000.000000,
+					"ParentId": 1,
+					"Id": 2
+				},
+				{
+					"Description": "g",
+					"Coef": 0.001000,
+					"ParentId": 1,
+					"Id": 4
+				}],
+				"ActionList": null,
+				"StorageUnits": null,
+				"IsStorage": false,
+				"UnitType": 3
+			},
+			{
+				"UnitId": 34,
+				"UnitDescription": "Tare",
+				"MeasurementUnitId": 1,
+				"MeasurementUnitDescription": "kg",
+				"Quantity": 1.00000000,
+				"MeasurementUnits": [{
+					"Description": "kg",
+					"Coef": null,
+					"ParentId": null,
+					"Id": 1
+				},
+				{
+					"Description": "t",
+					"Coef": 1000.000000,
+					"ParentId": 1,
+					"Id": 2
+				},
+				{
+					"Description": "g",
+					"Coef": 0.001000,
+					"ParentId": 1,
+					"Id": 4
+				}],
+				"ActionList": null,
+				"StorageUnits": null,
+				"IsStorage": false,
+				"UnitType": 3
+			}]
+		},
+		"RequestId": 0,
+		"Id": 0
+	}],
+	"Async": false,
+	"CancelWhenFailed": false,
+	"Id": 0
+}

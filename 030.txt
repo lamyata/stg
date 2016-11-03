@@ -1,0 +1,94 @@
+When you install Miscrosoft Sql Server LocalDb then you will be able to connect to '(LocalDb)\MSSQLLocalDB'
+
+Public API
+----------
+Investigation of public api should start with determining of all available endpoints.
+Endpoints can be determined by examining the URI field of the HTTP_LOG_ITEM.
+
+For VMG we have the following endpoints:
+
+	https://itos-api.vanmoergroup.com/api/InvoiceExporter
+	https://itos-api.vanmoergroup.com/api/OrderImport
+	https://itos-api.vanmoergroup.com/api/Shipment
+	https://itos-api.vanmoergroup.com/api/ConfirmationMessage
+	https://itos-api.vanmoergroup.com/api/SgnShipment
+	https://itos-api.vanmoergroup.com/api/Delivery
+	
+	http://ws.edi.vanmoergroup.com/BizTalkiTOSRestService/DeliveryService.svc/OutboundDelivery/0080016941
+	http://ws12-vmg10biz02/api/ContainerDischargingFromDepot/
+	http://ws12-vmg10biz02/api/ContainerLoadingToDepot/
+
+For VLN we have endpoints:
+
+http://192.168.17.17/api/VasPackagingOrder/
+http://10.1.0.101/api/DischargingShipBulkHatchEnd
+http://192.168.17.17/api/DischargingShipBulkOrder/
+https://itos-api.vlaeynatie.eu/api/ContainerDischargingFromDepot/
+http://10.1.0.101/api/DischargingShipBulkEnd
+http://10.1.0.101/api/DischargingShipBulkStart
+http://itos-papi.vlaeynatie.eu/api/DischargingShipBulkWeight
+http://yahoo.com/api/DischargingShipBulkOrder/
+http://10.1.0.101/api/DischargingShipBulkWeight
+https://itos-api.vlaeynatie.eu/api/DischargingShipBulkWeight
+http://itos-api.vlaeynatie.eu/api/DischargingShipBulkWeight
+
+Reportings can be deleted only if they are 'Open', and their Pending - Reported > 0. In other words reporting must have all its pending to be deletable. If some of the pending was
+processed and Pending is < Reported, then the reporting cannot be deleted.
+
+-- Plannings , Remainings, Pendings etc are all in sync. See OnStockRemoving and OnStockRemoved handlers for example of pannings being deleted.
+
+When palletizing 2 ois are created: stock change and loading
+In stock change location to is set (how?) and packaging unit is set to change from 'None' to ExternalId.
+
+------------------ TO UPDATE INVENTORY DIRECTLY --------------------------
+get the inventory requests from here
+
+select * from HTTP_LOG_ITEM where URI like '%InventoryRequest/' and REQUEST_TIMESTAMP between '2016-09-28 09:40' and '2016-09-28 09:42'
+
+and here
+
+select *, SUBSTRING(REQUEST_CONTENT, 1, 30000) as REQ1,
+	SUBSTRING(REQUEST_CONTENT, 30000, len(REQUEST_CONTENT)-30000 + 1) as REQ2,
+	len(REQUEST_CONTENT) as Len
+from HTTP_LOG_ITEM where URI like '%InventoryRequest/' and REQUEST_TIMESTAMP between '2016-09-28 09:40' and '2016-09-28 09:42'
+	and len(REQUEST_CONTENT) > 30000
+
+in the request replace '>k__BackingField' and '<' with nothing.
+
+adjust RequestType
+remove all "StorageQuantity": null, lines
+you can also remove "StockInfoId":###, "StockInfoConfigId": ###, "BaseQuantityId": ###, "StorageQuantityId": ###, "Id": ###
+
+for customs request
+remove all "ExtraUnitsIds": null, lines
+remove all "ExtraQuantities": null, lines
+
+You don't generally need a lot of properties, like 'CreateUser', 'CreateTimeStamp', most ids are not needed, etc.
+
+Make sure Async is false
+Very important, stock inventory request must have status, and it must be 1 - open, otherwise nothing happens.
+
+See siRequest.txt, siReq2.txt, ciRequest.txt for examples of stock inventory request / customs inventory request
+----------------------------------------------------------------------------
+
+var elem = $0;
+elem
+var nativeelem = elem.get(0);
+var bindingTarget = elem.kendoBindingTarget;
+bindingTarget
+
+Goldbird22
+---------------
+Q: How does this
+    var persister = Persistence.GetPersister<StockInfoQuantityModel>();
+    persister.Save(model);
+Save a StockInfoQty object?
+
+Q: Why do we need this
+    public class StockInfoQuantityModel : PresentationModel<int>
+    {
+		...
+        public dynamic StorageUnits { get; set; } // what is the dynamic for?
+-----
+SignalR
+StockInventoryResponseController

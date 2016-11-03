@@ -1,0 +1,14 @@
+https://jwcooney.com/2014/03/08/how-to-setup-remoteapp-to-connect-without-a-password-prompt/
+https://blogs.msdn.microsoft.com/rds/2007/09/27/terminal-services-remoteapp-session-termination-logic/
+https://social.technet.microsoft.com/Forums/windowsserver/en-US/ce7994d3-38a2-4025-a3d6-be23b5a67f07/ts-2008-remote-app-not-logoff?forum=winserverTS
+https://social.technet.microsoft.com/Forums/windowsserver/en-US/ce7994d3-38a2-4025-a3d6-be23b5a67f07/ts-2008-remote-app-not-logoff?forum=winserverTS
+http://blog.ronnypot.nl/?p=247
+remote app force ask for credentials
+
+gpedit.msc
+User Config
+Admin Templates
+Win Components
+Rmte Desktop Svcs
+Rmte Dektop
+Do not allow pwds to be saved

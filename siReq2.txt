@@ -1,0 +1,378 @@
+{
+	"OperationalDate": "2016-09-12T00:00:00",
+	"Status": 1,
+	"RequestItems": [{
+		"RequestType": 2,
+		"StockInfo": {
+			"StorageUnitId": null,
+			"StorageUnitQuantity": 0.0,
+			"BaseUnitId": 2,
+			"BaseUnitQuantity": 1200.00000000,
+			"BaseMeasurementUnitDesc": "kg",
+			"TrackingNumber": "20160630_ATLANTICBULKER",
+			"InventoryNumber": "20160630_ATLANTICBULKER",
+			"StockStatus": 0,
+			"Lot": "ATLANTIC BULKER ",
+			"ProductionDate": null,
+			"ExpiryDate": null,
+			"DateIn": null,
+			"StockStatusText": "Available",
+			"ExtraQuantities": [],
+			"Sids": [{
+				"SidId": 3,
+				"Value": null
+			},
+			{
+				"SidId": 5,
+				"Value": null
+			},
+			{
+				"SidId": 6,
+				"Value": null
+			},
+			{
+				"SidId": 12,
+				"Value": null
+			},
+			{
+				"SidId": 7,
+				"Value": null
+			},
+			{
+				"SidId": 8,
+				"Value": null
+			},
+			{
+				"SidId": 10,
+				"Value": null
+			}],
+			"StockInfoConfig": {
+				"InternalCompanyId": 1,
+				"OwnerId": 2,
+				"ProductId": 13,
+				"LocationId": 14,
+				"BaseUnitId": 2,
+				"StorageUnitId": null,
+				"TrackingNumber": "20160630_ATLANTICBULKER",
+				"InventoryNumber": "20160630_ATLANTICBULKER",
+				"Status": 0,
+				"StatusText": "Available",
+				"Lot": "ATLANTIC BULKER ",
+				"ProductionDate": null,
+				"ExpiryDate": null,
+				"DateIn": null,
+				"Sids": [{
+					"SidId": 3,
+					"Value": null
+				},
+				{
+					"SidId": 5,
+					"Value": null
+				},
+				{
+					"SidId": 6,
+					"Value": null
+				},
+				{
+					"SidId": 12,
+					"Value": null
+				},
+				{
+					"SidId": 7,
+					"Value": null
+				},
+				{
+					"SidId": 8,
+					"Value": null
+				},
+				{
+					"SidId": 10,
+					"Value": null
+				}]
+			},
+			"BaseQuantity": {
+				"UnitId": 2,
+				"MeasurementUnitId": 1,
+				"Quantity": 1200.00000000,
+				"UnitType": 1
+			},
+			"Quantities": [{
+				"UnitId": 2,
+				"MeasurementUnitId": 1,
+				"Quantity": 1200.00000000,
+				"UnitType": 1
+			}]
+		}
+	},
+	{
+		"RequestType": 2,
+		"StockInfo": {
+			"StorageUnitId": 31,
+			"BaseUnitId": 4,
+			"BaseMeasurementUnitDesc": null,
+			"TrackingNumber": null,
+			"InventoryNumber": null,
+			"StockStatus": 0,
+			"Lot": "PUR16-04342-1",
+			"ProductionDate": null,
+			"ExpiryDate": null,
+			"DateIn": null,
+			"ExtraQuantities": [],
+			"Sids": [{
+				"SidId": 5,
+				"Value": "B013 - KRISTA K PLUS"
+			},
+			{
+				"SidId": 6,
+				"Value": "PE"
+			},
+			{
+				"SidId": 34,
+				"Value": "Foil"
+			},
+			{
+				"SidId": 12,
+				"Value": "B25"
+			}],
+			"StockInfoConfig": {
+				"InternalCompanyId": 1,
+				"OwnerId": 2,
+				"ProductId": 2,
+				"LocationId": 23,
+				"BaseUnitId": 4,
+				"StorageUnitId": 31,
+				"TrackingNumber": null,
+				"InventoryNumber": null,
+				"Status": 0,
+				"StatusText": "Available",
+				"Lot": "PUR16-04342-1",
+				"ProductionDate": null,
+				"ExpiryDate": null,
+				"DateIn": null,
+				"ExtraUnitsIds": [],
+				"Sids": [{
+					"SidId": 5,
+					"Value": "B013 - KRISTA K PLUS"
+				},
+				{
+					"SidId": 6,
+					"Value": "PE"
+				},
+				{
+					"SidId": 34,
+					"Value": "Foil"
+				},
+				{
+					"SidId": 12,
+					"Value": "B25"
+				}]
+			},
+			"BaseQuantity": {
+				"UnitId": 4,
+				"MeasurementUnitId": null,
+				"Quantity": 48.00000000,
+				"MeasurementUnits": [],
+				"UnitType": 1
+			},
+			"StorageQuantity": {
+				"UnitId": 31,
+				"MeasurementUnitId": null,
+				"Quantity": 0.00000000,
+				"UnitType": 2
+			},
+			"Quantities": [{
+				"UnitId": 31,
+				"MeasurementUnitId": null,
+				"Quantity": 0.00000000,
+				"UnitType": 2
+			},
+			{
+				"UnitId": 4,
+				"MeasurementUnitId": null,
+				"Quantity": 48.00000000,
+				"UnitType": 1
+			}]
+		}
+	},
+	{
+		"RequestType": 2,
+		"StockInfo": {
+			"StorageUnitId": null,
+			"StorageUnitQuantity": 0.0,
+			"BaseUnitId": 4,
+			"BaseUnitQuantity": 1.00000000,
+			"BaseMeasurementUnitDesc": null,
+			"TrackingNumber": null,
+			"InventoryNumber": null,
+			"StockStatus": 0,
+			"Lot": null,
+			"ProductionDate": null,
+			"ExpiryDate": null,
+			"DateIn": null,
+			"StockStatusText": "Available",
+			"ExtraQuantities": [],
+			"Sids": [{
+				"SidId": 7,
+				"Value": "BL (1,1x1,1) 4W TR",
+				"Sequence": 10
+			},
+			{
+				"SidId": 8,
+				"Value": "New",
+				"Sequence": 20
+			}],
+			"StockInfoConfig": {
+				"InternalCompanyId": 1,
+				"OwnerId": 2,
+				"ProductId": 19,
+				"LocationId": 1936,
+				"BaseUnitId": 4,
+				"StorageUnitId": null,
+				"TrackingNumber": null,
+				"InventoryNumber": null,
+				"Status": 0,
+				"Lot": null,
+				"ProductionDate": null,
+				"ExpiryDate": null,
+				"DateIn": null,
+				"ExtraUnitsIds": [],
+				"Sids": [{
+					"SidId": 7,
+					"Value": "BL (1,1x1,1) 4W TR"
+				},
+				{
+					"SidId": 8,
+					"Value": "New"
+				}]
+			},
+			"BaseQuantity": {
+				"UnitId": 4,
+				"MeasurementUnitId": null,
+				"Quantity": 1.00000000,
+				"UnitType": 1
+			},
+			"Quantities": [{
+				"UnitId": 4,
+				"MeasurementUnitId": null,
+				"Quantity": 1.00000000,
+				"UnitType": 1
+			}]
+		}
+	},
+	{
+		"RequestType": 1,
+		"StockInfo": {
+			"StorageUnitId": 24,
+			"StorageUnitQuantity": 1.00000000,
+			"BaseUnitId": 2,
+			"BaseUnitQuantity": 1200.00000000,
+			"BaseMeasurementUnitDesc": "kg",
+			"TrackingNumber": "20160630_ATLANTICBULKER",
+			"InventoryNumber": "20160630_ATLANTICBULKER",
+			"StockStatus": 0,
+			"Lot": "044928-1850/10",
+			"ProductionDate": null,
+			"ExpiryDate": null,
+			"DateIn": null,
+			"ExtraQuantities": [],
+			"Sids": [{
+				"SidId": 3,
+				"Value": "White"
+			},
+			{
+				"SidId": 5,
+				"Value": "B013 - KRISTA K PLUS"
+			},
+			{
+				"SidId": 6,
+				"Value": "PE"
+			},
+			{
+				"SidId": 12,
+				"Value": "B25"
+			},
+			{
+				"SidId": 7,
+				"Value": "BL (1,1x1,1) 4W TR"
+			},
+			{
+				"SidId": 8,
+				"Value": "New"
+			},
+			{
+				"SidId": 10,
+				"Value": null
+			}],
+			"StockInfoConfig": {
+				"InternalCompanyId": 1,
+				"OwnerId": 2,
+				"ProductId": 13,
+				"LocationId": 31,
+				"BaseUnitId": 2,
+				"StorageUnitId": 24,
+				"TrackingNumber": "20160630_ATLANTICBULKER",
+				"InventoryNumber": "20160630_ATLANTICBULKER",
+				"Status": 0,
+				"Lot": "044928-1850/10",
+				"ProductionDate": null,
+				"ExpiryDate": null,
+				"DateIn": null,
+				"ExtraUnitsIds": [],
+				"Sids": [{
+					"SidId": 3,
+					"Value": "White"
+				},
+				{
+					"SidId": 5,
+					"Value": "B013 - KRISTA K PLUS"
+				},
+				{
+					"SidId": 6,
+					"Value": "PE"
+				},
+				{
+					"SidId": 12,
+					"Value": "B25"
+				},
+				{
+					"SidId": 7,
+					"Value": "BL (1,1x1,1) 4W TR"
+				},
+				{
+					"SidId": 8,
+					"Value": "New"
+				},
+				{
+					"SidId": 10,
+					"Value": null
+				}]
+			},
+			"BaseQuantity": {
+				"UnitId": 2,
+				"MeasurementUnitId": 1,
+				"Quantity": 1200.00000000,
+				"UnitType": 1
+			},
+			"StorageQuantity": {
+				"UnitId": 24,
+				"MeasurementUnitId": null,
+				"Quantity": 1.00000000,
+				"UnitType": 2
+			},
+			"Quantities": [{
+				"UnitId": 24,
+				"MeasurementUnitId": null,
+				"Quantity": 1.00000000,
+				"UnitType": 2
+			},
+			{
+				"UnitId": 2,
+				"MeasurementUnitId": 1,
+				"Quantity": 1200.00000000,
+				"UnitType": 1
+			}]
+		}
+	}],
+	"Async": false,
+	"CancelWhenFailed": false
+}

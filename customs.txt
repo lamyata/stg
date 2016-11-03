@@ -1,0 +1,10 @@
+Customs documents can be:
+
+- Inbound – they accompany the discharging operations when it comes to import of goods
+- Follow Up – additional docs that accompany the goods or that change the customs status of the goods (e.g. Customs Clearance). They are related to a specific Inbound document
+- Outbound – documents that accompany the loading operations (export / transshipment of goods). Related to 1 or more Inbound documents
+
+There are various documents that participate in the customs document flow each of them having a document code (IM-A-5100, IM-A-7100, T1, EX-A etc.) and a direction (see above).
+
+Inbound Goods Flow
+First distinction for the inbound flow is the origin of the goods. 

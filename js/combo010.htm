@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dropdown</title>
+	
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.1.112/styles/kendo.common.min.css">
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.1.112/styles/kendo.rtl.min.css">
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.1.112/styles/kendo.default.min.css">
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.1.112/styles/kendo.mobile.all.min.css">
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2016.1.112/js/angular.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2016.1.112/js/jszip.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2016.1.112/js/kendo.all.min.js"></script>	
+</head>
+<body>
+
+<input id="dropdownlist" style="width: 400px;"/>
+<div id="divOut"></div>
+<script>
+var evChange;
+var evSelect;
+$(document).ready(function() {
+	function onOpen() {
+		divOut.innerHTML += "<br/>open";
+	};
+
+	function onClose() {
+		divOut.innerHTML += "<br/>close<hr/>";
+	};
+
+	function onChange(e) {
+		evChange = e;
+		divOut.innerHTML += "<br/>change";
+		divOut.innerHTML += "<br/>dataItem: text: " + e.sender.dataItem().text + ", value: " + e.sender.dataItem().value;
+	};
+
+	function onSelect(e) {
+		evSelect = e;
+		var dataItem = this.dataItem(e.item.index());
+		divOut.innerHTML += "<br/>select (" + dataItem.text + " : " + dataItem.value + ")" ;
+		divOut.innerHTML += "<br/>old dataItem: text:" + e.sender.dataItem().text + ", value: " + e.sender.dataItem().value;
+		divOut.innerHTML += "<br/>item.text(): " + e.item.text();
+	};
+
+	function onDataBound(e) {
+		divOut.innerHTML += "<br/>dataBound";
+	};
+
+	function onFiltering(e) {
+		divOut.innerHTML += "<br/>filtering";
+	};
+
+	var data = [
+		{text: "Item1", value:"1"},
+		{text: "Item2", value:"2"},
+		{text: "Item3", value:"3"}
+	];
+
+	$("#dropdownlist").kendoDropDownList({
+		dataTextField: "text",
+		dataValueField: "value",
+		dataSource: data,
+		filter: "startswith",
+		select: onSelect,
+		change: onChange,
+		close: onClose,
+		open: onOpen,
+		filtering: onFiltering,
+		dataBound:onDataBound
+	});
+});
+</script>
+
+</body>
+</html>

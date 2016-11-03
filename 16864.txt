@@ -1,0 +1,23 @@
+Order 16864 - in process
+T 17825 (self svc) - completed
+LOI 25193 - in process
+LOR 384108 - compl/pending: Stock Has Qties Bellow Zero
+  STOCK_INVENTORY_REQUEST 324801, REPORTED 1706913, TRANSPORT 17825, OI 25193, CONTEXT 511653
+  P 120
+LOR 384109 - compl
+
+---
+Inventory pending while report is completed (orderitem 686/10)
+1. oi is vas and it is 'inprocesss'
+2. vas operation report is compl/pending, it has no stock inventory request, its UPDATE_TIMESTAMP is 2016-06-01 12:19:39.6400000
+3. there is one STOCK_INVENTORY_REQUEST about that time:
+	STOCK_INVENTORY_REQUEST_ID	OPERATIONAL_DATE	STATUS	INFO	CREATE_USER	CREATE_TIMESTAMP	UPDATE_USER	UPDATE_TIMESTAMP
+	9161	2016-05-31 00:00:00.0000000	1	NULL	Anonymous	2016-06-01 12:19:39.0000000	Anonymous	2016-06-01 12:19:39.6500000
+it is in status Open
+4. we find all STOCK_INVENTORY_REQUEST_ITEMS linked to this STOCK_INVENTORY_REQUEST, they are 3 in the from and 1 in the to side of the VAS order item,
+	we verify their products and quantities to make sure this is the STOCK_INVENTORY_REQUEST that is for this VAS_OPERATION_REPORTING.
+	the vas is generating a stock with inventory number 20160531_686, we look in Inventory, and Customs inventory for that inv. no
+	There's nothing in inv, and something in customs inv.
+5. we look in the LOG_MESSAGES and there is error with msg 'Rollback failed with SQL Exception'
+6. Solution: reopen order item, inventory and customs inventory get empty for that inv number; complete order item, inventory and
+	customs inventory get the new stock.

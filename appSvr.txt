@@ -1,0 +1,13 @@
+Installation
+open iTos.ApplicationServer.exe.config and add the following lines
+
+  <applicationSettings>
+    <ServiceName>iTos Application Server BTM UAT</ServiceName>
+  </applicationSettings>
+  
+Open cmd prompt as admin go to appSvr folder and run
+
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\installutil iTos.ApplicationServer.exe
+
+svc should run as Automatic under user Local System
+on dev machines svc run under user@iboris.local
