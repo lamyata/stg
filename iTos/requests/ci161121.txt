@@ -1,0 +1,66 @@
+{
+	"OperationalDate": "2016-08-22T00:00:00",
+	"Status": 0,
+	"Items": [{
+		"RequestType": 0,
+		"StockInfo": {
+			"StockInfoConfig": {
+				"Status": 0,
+				"InternalCompanyId": 1,
+				"OwnerId": 2,
+				"ProductId": 28,
+				"LocationId": 24,
+				"BaseUnitId": 2,
+				"StorageUnitId": 24,
+				"TrackingNumber": "20160321_MVWUHU",
+				"InventoryNumber": "20160321_MVWUHU",
+				"Lot": null,
+				"ProductionDate": null,
+				"ExpiryDate": null,
+				"DateIn": null,
+				"Sids": [{
+					"SidId": 3,
+					"Value": "White"
+				},
+				{
+					"SidId": 5,
+					"Value": "B008 - 25kg PE NPCTA 50 B"
+				},
+				{
+					"SidId": 6,
+					"Value": "PE"
+				},
+				{
+					"SidId": 12,
+					"Value": "B25"
+				},
+				{
+					"SidId": 7,
+					"Value": "BL (1,1x1,1) 4W TR"
+				},
+				{
+					"SidId": 8,
+					"Value": "New"
+				},
+				{
+					"SidId": 10,
+					"Value": null
+				}]
+			},
+			"BaseQuantity": {
+				"UnitId": 2,
+				"MeasurementUnitId": 1,
+				"Quantity": 4800.0
+			},
+			"StorageQuantity": {
+				"UnitId": 24,
+				"MeasurementUnitId": null,
+				"Quantity": 4.0
+			}
+		},
+		"CustomsStatus": 0,
+		"DocumentDate": null,
+		"DocumentCodeId": 0,
+		"DocumentNumber": null
+	}]
+}
