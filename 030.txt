@@ -32,13 +32,20 @@ http://10.1.0.101/api/DischargingShipBulkWeight
 https://itos-api.vlaeynatie.eu/api/DischargingShipBulkWeight
 http://itos-api.vlaeynatie.eu/api/DischargingShipBulkWeight
 
-Reportings can be deleted only if they are 'Open', and their Pending - Reported > 0. In other words reporting must have all its pending to be deletable. If some of the pending was
+Reportings can be deleted only if they are 'Open', and their Pending - Reported > 0. If some of the pending was
 processed and Pending is < Reported, then the reporting cannot be deleted.
+
+When we create rpt we create planning first.
+Planning has ordered (this is the good), planned (almost same as good), pending (0 first), remaining (same as good first).
+When we create open rpts pending increases so that it is the sum of all open rpts.
+When we complete rpts pending decreases so that it equals the sum of all open rpts, and also the remaining decreases so that it equals ordered minus sum of all completed rpts.
 
 -- Plannings , Remainings, Pendings etc are all in sync. See OnStockRemoving and OnStockRemoved handlers for example of pannings being deleted.
 
 When palletizing 2 ois are created: stock change and loading
 In stock change location to is set (how?) and packaging unit is set to change from 'None' to ExternalId.
+
+Important tickets: 860 for tariffs, 990 for pending
 
 ------------------ TO UPDATE INVENTORY DIRECTLY --------------------------
 get the inventory requests from here
@@ -92,3 +99,14 @@ Q: Why do we need this
 -----
 SignalR
 StockInventoryResponseController
+
+search google for
+ContainerFluentApi
+Fluent Registration API
+some of the results are:
+http://docs.castleproject.org/(S(35bxa5erli3xnx3fqavxtjmx))/History.aspx?NS=Windsor&Page=Windsor.Fluent-Registration-API-Extensions&Revision=0&AspxAutoDetectCookieSupport=1
+http://docs.castleproject.org/(S(1oyngsf0uumqxln4rout3n55))/Windsor.History.aspx?Page=Windsor.Fluent-Registration-API&Revision=55
+http://stackoverflow.com/questions/939659/castle-windsor-fluent-api-how-to-set-a-component-parameter-value-to-a-configure
+
+
+when we
