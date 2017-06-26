@@ -18,9 +18,14 @@ vln.test.itos.iboris.eu	vln.test.papi.itos.iboris.eu
 
 vmg.uat.itos.iboris.eu
 \\itos\FileStorage\iTos\UAT
+\\itos\FileStorage\iTos\VMG\UAT
+\\itos\FileStorage\iTos\VMG\TEST
 
 test.itos.iboris.eu
 \\itos\filestorage\iTos\TEST
+
+btm.uat.itos.iboris.eu
+\\itos\FileStorage\iTos\BTM
 
 ----
 USE [itos-uat.vlaeynatie.eu]

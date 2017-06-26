@@ -1,0 +1,61 @@
+{
+	"OperationalDate": "2017-01-06T00:00:00",
+	"Status": 0,
+	"Items": [{
+		"RequestType": 0,
+		"StockInfo": {
+			"StockInfoConfig": {
+				"Status": 0,
+				"InternalCompanyId": 1,
+				"OwnerId": 2,
+				"ProductId": 1,
+				"LocationId": 192,
+				"BaseUnitId": 2,
+				"StorageUnitId": null,
+				"TrackingNumber": "20170103_PUR16-09728-1",
+				"InventoryNumber": null,
+				"Lot": "PUR16-09728-1",
+				"ProductionDate": null,
+				"ExpiryDate": null,
+				"DateIn": "2017-01-03T00:00:00",
+				"Sids": [{
+					"SidId": 3,
+					"Value": "White"
+				},
+				{
+					"SidId": 5,
+					"Value": null
+				},
+				{
+					"SidId": 6,
+					"Value": null
+				},
+				{
+					"SidId": 12,
+					"Value": null
+				},
+				{
+					"SidId": 7,
+					"Value": null
+				},
+				{
+					"SidId": 8,
+					"Value": null
+				},
+				{
+					"SidId": 10,
+					"Value": null
+				}]
+			},
+			"BaseQuantity": {
+				"UnitId": 2,
+				"MeasurementUnitId": 1,
+				"Quantity": 1928560
+			}
+		},
+		"CustomsStatus": 0,
+		"DocumentDate": null,
+		"DocumentCodeId": 0,
+		"DocumentNumber": null
+	}]
+}

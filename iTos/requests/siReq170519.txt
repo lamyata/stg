@@ -1,0 +1,39 @@
+{
+	"OperationalDate": "2017-02-10T00:00:00",
+	"Status": 0,
+	"RequestItems": [{
+			"RequestType": 1,
+			"StockInfo": {
+				"StockInfoConfig": {
+					"Status": 0,
+					"InternalCompanyId": 1,
+					"OwnerId": 1776,
+					"ProductId": 8738,
+					"LocationId": 450,
+					"BaseUnitId": 23,
+					"StorageUnitId": 21,
+					"TrackingNumber": "809001267001",
+					"DateIn": "2017-02-10T00:00:00"
+				},
+				"BaseQuantity": {
+					"UnitId": 23,
+					"MeasurementUnitId": 11,
+					"Quantity": 1000.00000000
+				},
+				"StorageQuantity": {
+					"UnitId": 21,
+					"MeasurementUnitId": null,
+					"Quantity": 1.00000000
+				},
+				"ExtraQuantities": [{
+						"UnitId": 2,
+						"MeasurementUnitId": 1,
+						"Quantity": 1000.00000000
+					}
+				]
+			}
+		}
+	],
+	"OperationReportId": 3148,
+	"OperationReportStatus": 0
+}

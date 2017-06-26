@@ -1,0 +1,55 @@
+{
+	"OperationalDate": "2017-02-10T00:00:00",
+	"Status": 0,
+	"RequestItems": [{
+			"RequestType": 1,
+			"StockInfo": {
+				"<StockInfoConfig>k__BackingField": {
+					"<Status>k__BackingField": 0,
+					"<InternalCompanyId>k__BackingField": 1,
+					"<OwnerId>k__BackingField": 1776,
+					"<ProductId>k__BackingField": 8738,
+					"<LocationId>k__BackingField": 450,
+					"<BaseUnitId>k__BackingField": 23,
+					"<StorageUnitId>k__BackingField": 21,
+					"<TrackingNumber>k__BackingField": "809001267001",
+					"<InventoryNumber>k__BackingField": null,
+					"<Lot>k__BackingField": null,
+					"<ItemNumber>k__BackingField": null,
+					"<PackagingUnit>k__BackingField": null,
+					"<ShippingUnit>k__BackingField": null,
+					"<ProductionDate>k__BackingField": null,
+					"<ExpiryDate>k__BackingField": null,
+					"<DateIn>k__BackingField": "2017-02-10T00:00:00",
+					"<ExtraUnitsIds>k__BackingField": [2],
+					"<Sids>k__BackingField": null,
+					"<Id>k__BackingField": 0
+				},
+				"<BaseQuantity>k__BackingField": {
+					"<UnitId>k__BackingField": 23,
+					"<MeasurementUnitId>k__BackingField": 11,
+					"<Quantity>k__BackingField": 1000.00000000,
+					"<Id>k__BackingField": 0
+				},
+				"<StorageQuantity>k__BackingField": {
+					"<UnitId>k__BackingField": 21,
+					"<MeasurementUnitId>k__BackingField": null,
+					"<Quantity>k__BackingField": 1.00000000,
+					"<Id>k__BackingField": 0
+				},
+				"<ExtraQuantities>k__BackingField": [{
+						"<UnitId>k__BackingField": 2,
+						"<MeasurementUnitId>k__BackingField": 1,
+						"<Quantity>k__BackingField": 1000.00000000,
+						"<Id>k__BackingField": 0
+					}
+				],
+				"<Id>k__BackingField": 0
+			},
+			"Id": 0
+		}
+	],
+	"OperationReportId": 3148,
+	"OperationReportStatus": 0,
+	"Id": 0
+}

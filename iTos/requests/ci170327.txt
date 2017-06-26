@@ -1,0 +1,61 @@
+{
+	"OperationalDate": "2017-03-08T00:00:00",
+	"Status": 0,
+	"Items": [{
+			"RequestType": 0,
+			"StockInfo": {
+				"StockInfoConfig": {
+					"Status": 0,
+					"InternalCompanyId": 1,
+					"OwnerId": 2,
+					"ProductId": 15,
+					"LocationId": 23,
+					"BaseUnitId": 2,
+					"StorageUnitId": 19,
+					"TrackingNumber": "BE01-001574-1 / Mv WESTERN LUCREZIA",
+					"InventoryNumber": null,
+					"Lot": "BE01-000197-3416/10",
+					"ProductionDate": "2017-03-04T00:00:00",
+					"ExpiryDate": null,
+					"DateIn": "2017-03-02T00:00:00",
+					"Sids": [{
+							"SidId": 3,
+							"Value": null
+						}, {
+							"SidId": 5,
+							"Value": "B823 - UNIKA KALI 600KG"
+						}, {
+							"SidId": 6,
+							"Value": "BB"
+						}, {
+							"SidId": 12,
+							"Value": "BB600"
+						}, {
+							"SidId": 7,
+							"Value": null
+						}, {
+							"SidId": 8,
+							"Value": null
+						}, {
+							"SidId": 10,
+							"Value": null
+						}
+					]},
+				"BaseQuantity": {
+					"UnitId": 2,
+					"MeasurementUnitId": 1,
+					"Quantity": 24000.0
+				},
+				"StorageQuantity": {
+					"UnitId": 19,
+					"MeasurementUnitId": null,
+					"Quantity": 40.0
+				}
+			},
+			"CustomsStatus": 0,
+			"DocumentDate": null,
+			"DocumentCodeId": 0,
+			"DocumentNumber": null
+		}
+	]
+}

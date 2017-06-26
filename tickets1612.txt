@@ -1,0 +1,173 @@
+1205
+904 - 60min VMG
+905 - 90min VMG
+906 - 70min VMG
+907 - 45min VMG
+
+1206
+911 - 30min vln
+912 - 15 min vln
+
+1207
+914 - 120min vln
+
+1208
+planning - 2 hrs
+922 - 1 hr   VLN
+upload vln uat - 1hr
+923 - 30 min VMG 
+917 - 1 hr   VLN
+924 - 75 min VMG
+901 - 30 min VLN
+925 - 45 min VMG
+
+1609
+929 - 30 min VMG
+926 - 30 min VLN
+927 - 30 min VLN
+928 - 1 hr   VLN
+47133 and 46927 vmg scripts
+db restore
+
+1212
+910 - 30min vmg
+
+1213-1214 vac
+
+1215
+967 - 30 min VMG
+963	- 15 min VMG
+970	- 15 min VMG
+971	- 15 min VLN
+952	- 30 min VLN
+953 - 15 min VLN
+
+1216
+917 - 15 min
+948 - 30 min
+973 - 30 min
+972 - 30 min VLN
+974 - 30 min VLN
+975 - 30 min VMG
+981 - 140 mn VM
+
+1217
+972 - 15 min, rebuild vmg uat index - all 1 hour overtime
+
+1219
+financial document fix 120
+982	- 30 min VLN
+983 - 15 min VM
+984	- 30 min VM
+943	- 45 min
+978 - 5 min
+977 - 5 min
+
+968 - 30 min? VLN
+973 - 120min  VLN
+
+1220
+financial document fix 120
+overtime 1hr upload vmguat
+985	20 min VLN
+987 15 min VLN
+ic script 240min (rel to 973)
+
+1221
+uploads vln uat, btmuat
+990 - 120 BTM
+992	- 90 (120) BTM
+991 - 15 min VLN
+
+1222
+994 - 45 min VMG
+990 - 90 min VLN
+planning 30
+942 - 30 min VLN -- add to evernote
+email pieter - 30 mn
+861 - 30 min VMG
+995 - 20 min VM
+997 - 20 min VLN
+993 - 50 min VLN
+996 - 35 min VMG
+998 - 15 min VMG
+
+1223
+help plamena w/ db - 60 min
+999 - 45 min VLN
+1000 - 30 min VLN
+1001 - 45 min VLN
+1002 - 30 min VMG
+1004 - 20 min VLN
+
+1227
+1005 - 20 min VMG
+1000 - 60 min VLN
+1006 - 90 min BTM
+1009 - 30 min VMG
+1010 - 30 min VMG
+1011 - 30 min VLN
+1012 - 30 min VLN
+
+1228
+1007 - 45 min VLN
+1008 - 30 min VLN
+1013 - 90 min VMG
+1014 - 30 min VMG
+1015 - 20 min VMG
+1016 - 60 min VLN
+1017 - 30 min VLN
+1018 - 15 min VMG
+1019 - 45 min VMG
+
+1229
+1029 - 60 min VLN
+1020 - 30 min VLN
+script that will clear su coeff
+script that will replace owner = 1 from btm db
+
+1230
+47648:Insert tariff for Albemarle 362 - 90 min VMG
+47649:Insert locations for wrh X 356 - 300 min VMG
+47673:Insert tariff for 349 - 90 min           VMG
+
+0103
+1024 - 60 min VLN
+stop ImportFujiStock job on vmg-uat and vmg
+fuji stock delete script
+upload vln-uat
+upload btm-uat
+1025 - 120 min VMG
+
+0104
+del fuji stock - vmg
+del fuji prd - vmg
+del wrong vmg order
+
+VLN iTos access
+addr:     itosvln02.cloudapp.net
+user:      itosvln02\latanassov
+pass:     pO&0ZI7F9Dqv
+
+BTM VM Access
+addr      13.93.80.63
+user       latanassov
+pass       Mz8Z!BjEh&
+use disk X: (DATA)
+
+web server remote desktop
+––
+server  itosvm01.cloudapp.net:51828
+user     latanassov
+pass     3Repef-A
+
+sql server login
+––
+ itosdb01.database.windows.net
+user     latanassov
+pass     2uKu_etU
+
+connection string credentials
+––
+user     vln.itos.ionlogistics.eu
+pass     s4Ra$Ra&re+6Uwaprec2UjeN
