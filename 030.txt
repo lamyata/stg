@@ -1,4 +1,4 @@
-When you install Miscrosoft Sql Server LocalDb then you will be able to connect to '(LocalDb)\MSSQLLocalDB'
+
 
 Public API
 ----------
